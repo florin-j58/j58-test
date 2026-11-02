@@ -549,17 +549,6 @@
     main .cta-band p { margin-bottom: 16px; font-size: .98rem; }
     .cta-link { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 5px; }
     .cta-link:hover { text-decoration-thickness: 2px; }
-
-    /* sticky mobile CTA bar (phones, after the hero) */
-    .m-cta { display: none; }
-    @media (max-width: 640px) {
-      .m-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; display: flex; gap: 10px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(11,29,53,.96); transform: translateY(110%); transition: transform .25s ease; }
-      .m-cta.show { transform: none; }
-      .m-cta a { flex: 1; text-align: center; padding: 14px 10px; border-radius: 10px; font-weight: 600; text-decoration: none; }
-      .m-cta .m1 { background: var(--hero-accent); color: var(--hero-accent-ink); }
-      .m-cta .m2 { border: 1px solid rgba(255,255,255,.7); color: #fff; }
-      body { padding-bottom: 72px; }
-    }
   </style>
   <link rel="stylesheet" href="assets/css/inspire.css" />
   <link rel="stylesheet" href="assets/css/impact.css" />
@@ -1028,8 +1017,6 @@
       <div class="ds-footer__bottom"><span>&copy; <span id="year">2026</span> J58. All rights reserved.</span><span><a href="privacy-policy/index.html">Privacy</a> &middot; <a href="cookie-policy/index.html">Cookies</a> &middot; <a href="terms-and-conditions/index.html" data-terms>Terms</a> &middot; <a href="#" data-coming-soon>Accessibility</a></span></div>
     </div>
   </footer>
-
-  <div class="m-cta" id="mCta" aria-label="Quick actions"><a class="m1" href="book-a-demo/index.html">Book a demo</a><a class="m2" href="brochure/index.html">Brochure</a></div>
   <script src="assets/js/site.js"></script>
 
 <script>
@@ -1153,7 +1140,7 @@
       var wrap = document.getElementById('navWrap');
       var hero = document.querySelector('.page-hero');
       if (!wrap || !hero) return;
-      function update() { var past = hero.getBoundingClientRect().bottom < 100; wrap.classList.toggle('past-hero', past); var mc = document.getElementById('mCta'); if (mc) mc.classList.toggle('show', past); }
+      function update() { var past = hero.getBoundingClientRect().bottom < 100; wrap.classList.toggle('past-hero', past); }
       window.addEventListener('scroll', update, { passive: true });
       window.addEventListener('resize', update);
       update();
