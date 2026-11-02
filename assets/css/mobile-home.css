@@ -43,15 +43,24 @@
   .car-btn { width: 40px; height: 40px; }
 }
 
-/* "How can we help you": no white boxes on phones, just a highlighted outline; small buttons */
+/* "How can we help you": all screens, no white boxes, just a highlighted outline; compact buttons */
+.who .who-card { background: transparent !important; border: 0 !important;
+  box-shadow: 0 0 0 1px rgba(18,170,186,.75), 0 0 18px rgba(18,170,186,.28) !important; }
+.who .who-card:hover, .who .who-card:focus-visible { transform: none;
+  box-shadow: 0 0 0 2px #2bc4e0, 0 0 28px rgba(43,196,224,.45) !important; }
+.who .who-card .who-ic { background: rgba(18,170,186,.16) !important; }
+.who .who-card .who-ic svg { color: #2bc4e0; stroke: #2bc4e0; }
+.who .who-card b { color: #fff !important; }
+.who .who-card span { align-self: center !important; padding: 10px 22px !important; font-size: .88rem !important; }
+@media (min-width: 901px) {
+  .who .who-card { min-height: 0; padding: 28px 24px 26px; gap: 12px; }
+}
 @media (max-width: 900px) {
   .who { padding-block: 28px; }
   .who-grid { gap: 12px; }
-  .who .who-card { min-height: 0; padding: 14px 16px 16px; gap: 8px; border-radius: 14px;
-    background: transparent !important; box-shadow: 0 0 0 1px rgba(18,170,186,.75), 0 0 18px rgba(18,170,186,.28) !important; border: 0 !important; }
-  .who .who-card:hover, .who .who-card:focus-visible { box-shadow: 0 0 0 2px #2bc4e0, 0 0 26px rgba(43,196,224,.45) !important; transform: none; }
-  .who .who-card .who-ic { width: 36px; height: 36px; margin-bottom: 0; background: rgba(18,170,186,.16) !important; }
-  .who .who-card .who-ic svg { width: 18px; height: 18px; color: #2bc4e0; stroke: #2bc4e0; }
-  .who .who-card b { font-size: 1rem; margin-bottom: 2px; color: #fff !important; }
-  .who .who-card span { align-self: center !important; padding: 8px 16px !important; font-size: .8rem !important; }
+  .who .who-card { min-height: 0; padding: 14px 16px 16px; gap: 8px; border-radius: 14px; }
+  .who .who-card .who-ic { width: 36px; height: 36px; margin-bottom: 0; }
+  .who .who-card .who-ic svg { width: 18px; height: 18px; }
+  .who .who-card b { font-size: 1rem; margin-bottom: 2px; }
+  .who .who-card span { padding: 8px 16px !important; font-size: .8rem !important; }
 }
