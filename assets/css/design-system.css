@@ -270,3 +270,17 @@ html:not(.hc) body { background: var(--ds-cream); }
 
 /* Section subtitles / eyebrows: always design-system orange */
 .eyebrow, .section-alt .eyebrow, .bg-deep .eyebrow, .sp-head .eyebrow, .specs-section__overline, .ds-eyebrow { color: var(--ds-orange, #E9762B) !important; }
+
+/* ---------- OUTLINE CARDS (site-wide): transparent background, highlighted border ---------- */
+.card:not(:has(.card-media)), .dl-card, .fx-card, .acc-item, .pf2__item, .tl-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: 0 0 0 1px rgba(18,170,186,.75), 0 0 16px rgba(18,170,186,.22) !important;
+}
+.card:not(:has(.card-media)):hover, .dl-card:hover, .fx-card:hover, .acc-item:hover, .pf2__item:hover, .tl-card:hover {
+  box-shadow: 0 0 0 2px #2bc4e0, 0 0 24px rgba(43,196,224,.38) !important;
+}
+.fx-card[aria-pressed="true"] { background: rgba(18,170,186,.10) !important; box-shadow: 0 0 0 2px #12aaba, 0 0 24px rgba(43,196,224,.35) !important; }
+.fx-card[aria-pressed="true"] .fx-icon { background: transparent !important; }
+.card:not(:has(.card-media)) .card-icon, .fx-icon { background: rgba(18,170,186,.12) !important; }
+.dl-card .btn-primary { padding: 8px 16px !important; font-size: .85rem !important; width: fit-content; align-self: center; }
