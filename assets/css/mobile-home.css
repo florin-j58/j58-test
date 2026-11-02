@@ -51,7 +51,7 @@
 .who .who-card .who-ic { background: rgba(18,170,186,.16) !important; }
 .who .who-card .who-ic svg { color: #2bc4e0; stroke: #2bc4e0; }
 .who .who-card b { color: #fff !important; }
-.who .who-card span { align-self: center !important; padding: 10px 22px !important; font-size: .88rem !important; }
+.who .who-card span { align-self: center !important; padding: 7px 14px !important; font-size: .84rem !important; width: fit-content !important; gap: 6px !important; line-height: 1.2 !important; }
 @media (min-width: 901px) {
   .who .who-card { min-height: 0; padding: 28px 24px 26px; gap: 12px; }
 }
@@ -62,5 +62,5 @@
   .who .who-card .who-ic { width: 36px; height: 36px; margin-bottom: 0; }
   .who .who-card .who-ic svg { width: 18px; height: 18px; }
   .who .who-card b { font-size: 1rem; margin-bottom: 2px; }
-  .who .who-card span { padding: 8px 16px !important; font-size: .8rem !important; }
+  .who .who-card span { padding: 6px 12px !important; font-size: .78rem !important; }
 }
