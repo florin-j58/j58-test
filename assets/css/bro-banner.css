@@ -16,4 +16,9 @@
 @media (max-width:820px){
   .bro--home .bro-card { grid-template-columns:1fr; }
   .bro--home .bro-photo { min-height:220px; margin:0; clip-path:none; order:-1; }
+  /* centred on phones and tablets */
+  .bro--home .bro-text { text-align:center; padding:22px 20px 26px; }
+  .bro--home .bro-text p { margin:0 auto 20px; font-size:1rem; }
+  .bro--home .bro-text h2 { margin-bottom:10px; }
+  .bro--home .bro-actions { justify-content:center; }
 }

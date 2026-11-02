@@ -20,4 +20,23 @@
 .ds-footer__bottom a { color:#8fa1b6; }
 .ds-footer__bottom a:hover { color:#12aaba; }
 @media (max-width:820px){ .ds-footer__grid { grid-template-columns:1fr 1fr; gap:32px; } .ds-footer__brand { grid-column:1/-1; } }
-@media (max-width:520px){ .ds-footer__grid { grid-template-columns:1fr; } }
+@media (max-width:520px){
+  .ds-footer { padding:32px 0 20px; }
+  .ds-footer__title { font-size:1.6rem; margin-bottom:22px; }
+  .ds-footer__grid { grid-template-columns:1fr 1fr; gap:22px 16px; padding-bottom:22px; }
+  .ds-footer__brand { grid-column:1/-1; }
+  .ds-footer__logo img { height:36px; }
+  .ds-footer__brand p { margin-top:10px; font-size:.85rem; line-height:1.5; }
+  .ds-footer__social { margin-top:14px; gap:8px; }
+  .ds-footer__social a { width:36px; height:36px; }
+  .ds-footer__col:last-child { grid-column:1/-1; }
+  .ds-footer__col h4 { margin-bottom:6px; font-size:.72rem; }
+  .ds-footer__col a { padding:4px 0; font-size:.88rem; }
+  .ds-footer__bottom { flex-direction:column; gap:6px; padding-top:16px; font-size:.78rem; }
+  /* everything centred on phones */
+  .ds-footer, .ds-footer__title, .ds-footer__brand, .ds-footer__col, .ds-footer__bottom { text-align:center; }
+  .ds-footer__title { margin-inline:auto; }
+  .ds-footer__logo img, .ds-footer__brand p { margin-inline:auto; }
+  .ds-footer__social { justify-content:center; }
+  .ds-footer__bottom { align-items:center; justify-content:center; }
+}
