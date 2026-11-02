@@ -43,14 +43,15 @@
   .car-btn { width: 40px; height: 40px; }
 }
 
-/* "How can we help you" cards: smaller, easier to scan */
+/* "How can we help you": no white boxes on phones, just a highlighted outline; small buttons */
 @media (max-width: 900px) {
   .who { padding-block: 28px; }
-  .who-grid { gap: 10px; }
-  .who-card { min-height: 0; padding: 16px 16px 14px; gap: 6px; border-radius: 14px; }
-  .who-card .who-ic { width: 40px; height: 40px; margin-bottom: 0; }
-  .who-card .who-ic svg { width: 20px; height: 20px; }
-  .who-card b { font-size: 1rem; margin-bottom: 4px; }
-  .who-card span { padding: 10px 16px !important; font-size: .85rem !important; }
+  .who-grid { gap: 12px; }
+  .who .who-card { min-height: 0; padding: 14px 16px 16px; gap: 8px; border-radius: 14px;
+    background: transparent !important; box-shadow: 0 0 0 1px rgba(18,170,186,.75), 0 0 18px rgba(18,170,186,.28) !important; border: 0 !important; }
+  .who .who-card:hover, .who .who-card:focus-visible { box-shadow: 0 0 0 2px #2bc4e0, 0 0 26px rgba(43,196,224,.45) !important; transform: none; }
+  .who .who-card .who-ic { width: 36px; height: 36px; margin-bottom: 0; background: rgba(18,170,186,.16) !important; }
+  .who .who-card .who-ic svg { width: 18px; height: 18px; color: #2bc4e0; stroke: #2bc4e0; }
+  .who .who-card b { font-size: 1rem; margin-bottom: 2px; color: #fff !important; }
+  .who .who-card span { align-self: center !important; padding: 8px 16px !important; font-size: .8rem !important; }
 }
-
