@@ -152,9 +152,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn-ghost:hover { gap: 12px; }
 .btn-lg { padding: 18px 36px; font-size: calc(17px * var(--ts)); }
 
-/* Wheelchair cursor on buttons (falls back to pointer) */
+/* Buttons use the normal pointer cursor.
+   Backup: the wheelchair cursor design is kept in assets/img/cursor-wheelchair.svg.
+   To bring it back, replace "cursor: pointer" below with:
+   cursor: url("../img/cursor-wheelchair.svg") 6 4, pointer; */
 .btn-primary, .btn-secondary, .btn-ghost {
-  cursor: url("../img/cursor-wheelchair.svg") 6 4, pointer;
+  cursor: pointer;
 }
 
 /* ---------- SKIP LINK ---------- */
