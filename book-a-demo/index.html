@@ -219,7 +219,7 @@ document.getElementById('cxAgain').addEventListener('click',function(){f.reset()
 })();</script>
 <script>(function(){var side=document.getElementById('cxSide'),form=document.getElementById('cx');if(!side||!form)return;
 var chars=[].slice.call(side.querySelectorAll('.cx-c')),trail=document.getElementById('cxTrail'),wheel=document.getElementById('cxWheel'),spin=document.getElementById('cxSpin'),typing=side.querySelector('.cx-typing'),R=170,C=2*Math.PI*R,cx=200,cy=260,last=0,spd=1,raf=0;
-trail.style.strokeDasharray=C;trail.style.strokeDashoffset=C;
+if(!trail||!wheel||!spin)return;trail.style.strokeDasharray=C;trail.style.strokeDashoffset=C;
 function upd(){raf=0;var r=form.getBoundingClientRect(),vh=innerHeight,p=Math.min(1,Math.max(0,(vh*.55-r.top)/(r.height*.9)));
 var ang=-Math.PI/2+p*2*Math.PI;wheel.setAttribute('transform','translate('+(cx+R*Math.cos(ang))+' '+(cy+R*Math.sin(ang))+')');spin.setAttribute('transform','rotate('+(p*2600)+')');
 trail.style.strokeDashoffset=C*(1-p);

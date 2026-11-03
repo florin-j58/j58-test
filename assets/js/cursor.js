@@ -1,5 +1,9 @@
 /* EZER wheelchair cursor: the big wheel sits on the pointer's hotspot, rolls as you move, and spins bright blue over clickable things. */
 (function () {
+  /* Backup: the wheelchair cursor is switched off, so clickable things show the normal pointer.
+     To bring the wheelchair cursor back, set WHEELCHAIR_CURSOR to true. */
+  var WHEELCHAIR_CURSOR = false;
+  if (!WHEELCHAIR_CURSOR) return;
   if (!window.matchMedia || !matchMedia('(hover:hover) and (pointer:fine)').matches) return;
   var NS = 'http://www.w3.org/2000/svg';
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
