@@ -1643,7 +1643,7 @@
 <script src="../assets/js/consent.js" defer></script>
 <script src="../assets/js/coming-soon.js" defer></script>
 <script src="../assets/js/newsletter-popup.js" defer></script>
-<link rel="stylesheet" href="../assets/css/nav-dd.css?v=3" />
+<link rel="stylesheet" href="../assets/css/nav-dd.css?v=5" />
 <style id="nav-like-home">
     /* ---------- NAV: logo left, floating dark pill, white CTA right ---------- */
     .nav-wrap,
@@ -1844,15 +1844,12 @@
 
   <!-- Mobile drawer -->
   <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
-    <a href="index.html" aria-current="page">Product</a>
-    <a href="resources.html">Resources</a>
+    <div class="md-group"><button type="button" class="md-toggle" aria-expanded="false">Product<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="md-sub"><a href="index.html" aria-current="page">The EZER</a><a href="resources.html">Resources</a></div></div>
     <a href="../user-stories/index.html">User Stories</a>
     <a href="../reimbursement/index.html">Funding</a>
     <a href="../professionals/index.html">For Professionals</a>
     <a href="../distributors/index.html">Dealers</a>
-    <a href="../about/index.html">About</a>
-    <a href="../blog/index.html">Blogs and articles</a>
-    <a href="../faq/index.html">FAQ</a>
+    <div class="md-group"><button type="button" class="md-toggle" aria-expanded="false">About<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="md-sub"><a href="../about/index.html">Our story &amp; team</a><a href="../about/index.html#team-heading">Meet the team</a><a href="../blog/index.html">Blogs and articles</a><a href="../faq/index.html">FAQ</a></div></div>
     <a href="../contact/index.html">Contact</a>
     <div class="mobile-cta">
       <a href="../book-a-demo/index.html" class="btn-primary" style="width:100%;justify-content:center;">Book a Demo</a>
@@ -2587,7 +2584,7 @@ bt.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.mode)
 </script>
 <script src="../assets/js/cursor.js" defer></script>
 <script src="../assets/js/a11y.js"></script>
-<script src="../assets/js/nav-dd.js?v=3"></script>
+<script src="../assets/js/nav-dd.js?v=4"></script>
   <script>
     /* Solid navy nav bar once the hero has scrolled out of view (same as home) */
     (function () {

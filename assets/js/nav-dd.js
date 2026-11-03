@@ -1,3 +1,5 @@
+/* Mobile drawer dropdown groups (Product, About) */
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.md-toggle');if(!b)return;var g=b.parentNode,o=g.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
 (function(){
   var wrap=document.getElementById('navWrap')||document.getElementById('nav-wrap'); if(!wrap) return;
   var items=[].slice.call(wrap.querySelectorAll('.nav-dd')); if(!items.length) return;

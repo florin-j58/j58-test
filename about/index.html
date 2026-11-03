@@ -89,7 +89,7 @@
 <script src="../assets/js/consent.js" defer></script>
 <script src="../assets/js/coming-soon.js" defer></script>
 <script src="../assets/js/newsletter-popup.js" defer></script>
-<link rel="stylesheet" href="../assets/css/nav-dd.css?v=3" />
+<link rel="stylesheet" href="../assets/css/nav-dd.css?v=5" />
 <meta name="robots" content="noindex,nofollow" />
 </head>
 <body>
@@ -138,16 +138,12 @@
       <button class="nav-hamburger" id="hamburger" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
     </nav>
     <div class="mobile-drawer" id="mobileDrawer" aria-label="Navigation menu">
-      <a href="../product/index.html">Product</a>
-      <a href="../product/resources.html">Resources</a>
+      <div class="md-group"><button type="button" class="md-toggle" aria-expanded="false">Product<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="md-sub"><a href="../product/index.html">The EZER</a><a href="../product/resources.html">Resources</a></div></div>
       <a href="../user-stories/index.html">User Stories</a>
       <a href="../reimbursement/index.html">Funding</a>
       <a href="../professionals/index.html">For Professionals</a>
       <a href="../distributors/index.html">Dealers</a>
-      <a href="index.html">About</a>
-      <a href="index.html#team-heading">Team</a>
-      <a href="../blog/index.html">Blogs and articles</a>
-      <a href="../faq/index.html">FAQ</a>
+      <div class="md-group"><button type="button" class="md-toggle" aria-expanded="false">About<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="md-sub"><a href="index.html">Our story &amp; team</a><a href="index.html#team-heading">Meet the team</a><a href="../blog/index.html">Blogs and articles</a><a href="../faq/index.html">FAQ</a></div></div>
       <a href="../contact/index.html">Contact</a>
       <div class="mobile-cta"><a href="../book-a-demo/index.html" class="btn-primary" style="display:block;text-align:center;">Book a Demo</a></div>
     </div>
@@ -324,6 +320,6 @@ d+=' L '+prev.x+' '+(prev.y+90);base.setAttribute('d',d);prog.setAttribute('d',d
 function update(){var r=tl.getBoundingClientRect(),vh=window.innerHeight,f=Math.min(1,Math.max(0,(vh*.6-r.top)/r.height));prog.style.strokeDashoffset=len*(1-f);var line=vh*.6;items.forEach(function(it){var d=it.querySelector('.tl-dot').getBoundingClientRect();it.classList.toggle('on',d.top+11<line)})}
 window.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',build);window.addEventListener('load',build);build()})();</script>
 <script src="../assets/js/a11y.js"></script>
-<script src="../assets/js/nav-dd.js?v=3"></script>
+<script src="../assets/js/nav-dd.js?v=4"></script>
 </body>
 </html>

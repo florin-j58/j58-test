@@ -34,3 +34,13 @@
 
 /* invisible bridge so the pointer can travel from the button to the panel without it closing */
 .nav-wrap .nav-mega::before{content:"";position:absolute;left:0;right:0;top:-18px;height:18px}
+
+/* Mobile drawer: Product and About open as dropdown groups */
+.mobile-drawer .md-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;padding:12px 8px;background:none;border:0;color:#fff;font:inherit;font-weight:500;text-align:left;cursor:pointer;border-radius:8px}
+.mobile-drawer .md-toggle:hover{background:rgba(255,255,255,.1)}
+.mobile-drawer .md-toggle svg{width:18px;height:18px;flex:none;transition:transform .22s ease}
+.mobile-drawer .md-group.open > .md-toggle svg{transform:rotate(180deg)}
+.mobile-drawer .md-sub{display:none;flex-direction:column;margin:0 0 6px 10px;padding-left:14px;border-left:2px solid rgba(18,170,186,.7)}
+.mobile-drawer .md-group.open > .md-sub{display:flex}
+.mobile-drawer .md-sub a{font-size:.92em;opacity:.92}
+.nav-wrap .mobile-drawer.open{max-height:calc(100svh - 96px);overflow-y:auto;-webkit-overflow-scrolling:touch}
